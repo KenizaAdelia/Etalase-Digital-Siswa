@@ -1,0 +1,23 @@
+:root{--merah:#d4202f;--merah-tua:#9e0f1e;--merah-muda:#fdecee;--garis:#ead9db}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Roboto,Arial,sans-serif;background:#fff;min-height:100vh}
+.auth{display:grid;grid-template-columns:1.1fr 1fr;min-height:100vh}
+.panel-merah{background:linear-gradient(150deg,var(--merah),var(--merah-tua));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;gap:14px}
+.panel-merah img{width:150px;height:150px;background:#fff;border-radius:50%;padding:10px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.panel-merah h1{font-size:2rem}.panel-merah h1 span{border-bottom:4px solid #fff}
+.panel-merah p{opacity:.92;max-width:320px}
+.panel-form{display:flex;align-items:center;justify-content:center;padding:30px;background:#fff}
+.kartu-form{width:100%;max-width:380px}
+.kartu-form h2{color:var(--merah-tua);font-size:1.7rem}
+.sub{color:#777;margin:4px 0 18px}
+.kartu-form label{display:block;font-weight:600;margin:14px 0 6px;font-size:.92rem}
+.kartu-form input{width:100%;padding:12px 14px;border:2px solid var(--garis);border-radius:10px;font:inherit}
+.kartu-form input:focus{outline:none;border-color:var(--merah)}
+.kartu-form button{width:100%;margin-top:22px;background:var(--merah);color:#fff;border:0;border-radius:10px;padding:13px;font-size:1rem;font-weight:700;cursor:pointer}
+.kartu-form button:hover{background:var(--merah-tua)}
+.alih{text-align:center;margin-top:16px;font-size:.92rem;color:#666}
+.alih a{color:var(--merah);font-weight:600;text-decoration:none}
+.alert{padding:11px 14px;border-radius:10px;margin-bottom:8px;font-size:.92rem}
+.alert.ok{background:#e9f7ee;color:#1e6b3a;border:1px solid #b9e2c6}
+.alert.err{background:var(--merah-muda);color:var(--merah-tua);border:1px solid #f3b9bf}
+@media(max-width:800px){.auth{grid-template-columns:1fr}.panel-merah{padding:28px 20px}.panel-merah img{width:90px;height:90px}.panel-merah h1{font-size:1.5rem}}

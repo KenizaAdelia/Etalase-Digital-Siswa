@@ -1,0 +1,10 @@
+@import url("dashboard.css");
+.form-card{background:var(--putih);border-radius:16px;padding:28px 30px;box-shadow:var(--bayang);border:1px solid var(--garis);border-top:5px solid var(--merah)}
+.form-card h2{color:var(--merah-tua);margin-bottom:16px}
+.form-card label{display:block;font-weight:600;margin:14px 0 6px;font-size:.92rem}
+.form-card label small{font-weight:400;color:var(--abu)}
+.form-card input,.form-card textarea,.form-card select{width:100%;padding:11px 14px;border:2px solid var(--garis);border-radius:10px;font:inherit;background:#fff}
+.form-card input:focus,.form-card textarea:focus,.form-card select:focus{outline:none;border-color:var(--merah)}
+.form-card input[type=file]{padding:9px;background:var(--merah-muda)}
+.tombol{display:flex;gap:10px;margin-top:22px}
+.pratinjau{width:100%;max-height:200px;object-fit:cover;border-radius:10px;margin-bottom:8px;border:1px solid var(--garis)}
